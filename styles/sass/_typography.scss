@@ -1,0 +1,24 @@
+// Make font size 10px 
+html {
+    font-size: 62.5%;
+}
+
+// Set fonts and and default font size 
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+@mixin robotoFont ($fontSize, $fontColour, $weight, $lineHeight, $letterSpacing) {
+    font-size: $fontSize;
+    color: $fontColour;
+    weight: $weight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+
+
+
+

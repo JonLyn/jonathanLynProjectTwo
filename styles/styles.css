@@ -234,3 +234,51 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+footer {
+  font-family: 'Lora', serif;
+  background-color: black;
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Nova Flat', cursive;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
