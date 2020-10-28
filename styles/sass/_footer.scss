@@ -2,6 +2,6 @@ footer {
     font-family: 'Lora', serif;
     background-color: black;
     color: white;
-    
-    
+    text-align: center;  
+    @include robotoFont(4rem, $whiteShade);
 }

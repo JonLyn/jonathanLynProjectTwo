@@ -245,10 +245,79 @@ body {
   font-size: 1.6rem;
 }
 
+.horizNav {
+  padding: 30px 0;
+}
+
+.horizNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.horizNav li {
+  margin: 0 30px;
+}
+
+.horizNav a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.horizNav span {
+  font-family: 'Lora', serif;
+  font-size: 4rem;
+  color: #2C2C2C;
+}
+
+header {
+  background-color: #F6A823;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-size: 14rem;
+  color: #2C2C2C;
+  font-weight: 800;
+  line-height: 92px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.circleText {
+  position: absolute;
+}
+
 footer {
   font-family: 'Lora', serif;
   background-color: black;
   color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+  color: #F0EFED;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0;
 }
 
 * {
@@ -260,6 +329,10 @@ footer {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {

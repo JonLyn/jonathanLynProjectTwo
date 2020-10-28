@@ -1,0 +1,30 @@
+// See _nav.scss for menu styles
+
+//  HEADER SECTION
+header {
+    background-color: $orangeyYellow;
+}
+
+// .title {
+//     display: flex;
+// }
+
+.title {
+    display: flex;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 14rem;
+    color: $black;
+    font-weight: 800;
+    line-height: 92px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.circleText {
+    position: absolute;
+}
+

@@ -1,0 +1,26 @@
+.horizNav {
+    padding: 30px 0;
+}
+
+.horizNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.horizNav li {
+    margin: 0 30px;
+    
+}
+
+.horizNav a {
+    text-decoration: none;
+    @include robotoFont(2rem, $black, 700, 29px, 1px);
+}
+
+.horizNav span {
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+    color: $black;
+}
