@@ -284,27 +284,93 @@ body {
 
 header {
   background-color: #F6A823;
+  height: 90vh;
+  max-height: 700px;
+  margin-bottom: 10vh;
+  border: 3px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero {
+  border: 5px dashed yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 3px solid green;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+  left: 57px;
 }
 
-header h1 {
+.title h1 {
   font-family: 'Lora', serif;
-  font-size: 14rem;
+  font-size: 12rem;
   color: #2C2C2C;
   font-weight: 800;
   line-height: 92px;
   letter-spacing: 0;
   text-transform: uppercase;
   position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .circleText {
   position: absolute;
+  left: -65px;
+  top: -80px;
+}
+
+.orangesPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  position: relative;
+  border: 3px solid blue;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.orangesPic img {
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  min-width: 450px;
+}
+
+.overflow {
+  border: 3px dashed pink;
+  position: relative;
+  width: 90%;
+  height: 110%;
+  overflow: hidden;
 }
 
 footer {
@@ -348,10 +414,12 @@ body {
   font-family: 'Catamaran', sans-serif;
   font-family: 'Nova Flat', cursive;
   font-size: 1.6rem;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 1800px;
+  width: 1140px;
+  max-width: 90%;
   margin: 0 auto;
 }

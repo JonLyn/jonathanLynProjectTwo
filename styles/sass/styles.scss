@@ -39,16 +39,18 @@ html {
     overflow-x:hidden;
 }
 
-// Set fonts and and default font size 
+// Set max width, fonts and and default font size 
 body {
     font-family: 'Catamaran', sans-serif;
     font-family: 'Nova Flat', cursive;
     font-size: 1.6rem;
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
 // Set wrapper dimensions 
 .wrapper {
-    width: 100%;
-    max-width: 1800px;
+    width: 1140px;
+    max-width: 90%;
     margin: 0 auto;
 }
