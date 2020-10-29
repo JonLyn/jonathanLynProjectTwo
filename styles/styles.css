@@ -375,6 +375,10 @@ header {
   padding: 50px 0;
 }
 
+.travelled {
+  padding-bottom: 50px;
+}
+
 .whoIs h2,
 .favouriteThings h2,
 .travelled h2 {
@@ -449,6 +453,60 @@ header {
 .beachChairs {
   -webkit-box-shadow: 15px 15px #F6A823, 113px 15px #F6A823;
           box-shadow: 15px 15px #F6A823, 113px 15px #F6A823;
+  position: absolute;
+  top: -125px;
+}
+
+.iconSection {
+  background: #F0EFED;
+  padding: 100px 0;
+}
+
+.iconSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iconSection li {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-bottom: 50px;
+}
+
+.iconSection i {
+  font-size: 2rem;
+  background-color: #F6A823;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -50px;
+}
+
+.iconSection a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.iconSection p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #2C2C2C;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-top: 15px;
 }
 
 footer {

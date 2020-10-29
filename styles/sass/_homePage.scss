@@ -85,6 +85,10 @@ header {
     padding: 50px 0;
 }
 
+.travelled {
+    padding-bottom: 50px;
+}
+
 .whoIs h2,
 .favouriteThings h2,
 .travelled h2 {
@@ -101,7 +105,6 @@ header {
 }
 
 .travelled article {
-   
     text-align: right;
 }
 
@@ -143,7 +146,48 @@ header {
 
 .beachChairs {
     box-shadow: 15px 15px $orangeyYellow, 113px 15px $orangeyYellow;
+    position: absolute;
+    top: -125px;
 }
+
+
+.iconSection {
+    background: $whiteShade;
+    padding: 100px 0;
+}
+
+.iconSection ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.iconSection li {
+    flex-basis: 45%;  
+    margin-bottom: 50px;
+
+}
+
+.iconSection i {
+    font-size: 2rem;
+    background-color: $orangeyYellow;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px;
+}
+
+.iconSection a {
+    @include robotoFont (3.2rem, $black, 700, 1, 1px);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.iconSection p {
+    @include robotoFont (2rem, $black, 400, 32px, 0px);
+    padding-top: 15px;
+}
+
 
 
 
