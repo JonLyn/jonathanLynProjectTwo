@@ -402,7 +402,7 @@ header {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
-  margin: 25px 0 40px 0;
+  margin: 20px 0 40px 0;
 }
 
 .travelled article {
@@ -420,7 +420,7 @@ header {
   line-height: 32px;
   letter-spacing: 1px;
   background-color: #05AFC1;
-  padding: 15px;
+  padding: 10px 15px;
   text-transform: uppercase;
 }
 
@@ -541,17 +541,36 @@ header {
       flex-basis: 65%;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+.gallery div {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
 footer {
   font-family: 'Lora', serif;
   background-color: black;
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 4rem;
+  font-size: 1.6rem;
   color: #F0EFED;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0;
+}
+
+footer a {
+  color: #05AFC1;
 }
 
 * {

@@ -3,5 +3,9 @@ footer {
     background-color: black;
     color: white;
     text-align: center;  
-    @include robotoFont(4rem, $whiteShade);
+    @include robotoFont(1.6rem, $whiteShade);
+}
+
+footer a {
+    color: $accent;
 }

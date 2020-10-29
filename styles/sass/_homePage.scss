@@ -103,7 +103,7 @@ header {
 .journey p {
     @include robotoFont (2rem, $black, 400, 32px, 0px);
     // width: 90%;
-    margin: 25px 0 40px 0;
+    margin: 20px 0 40px 0;
 }
 
 .travelled article {
@@ -116,7 +116,7 @@ header {
 .journey a {
     @include robotoFont (2rem, $black, 700, 32px, 1px);
     background-color: $accent;
-    padding: 15px;
+    padding: 10px 15px;
     text-transform: uppercase;
 }
 
@@ -213,6 +213,17 @@ header {
 
 .journey article {
     flex-basis: 65%;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.gallery div {
+    flex-basis: 32%;
 }
 
 
