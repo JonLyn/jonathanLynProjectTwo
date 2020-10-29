@@ -381,7 +381,8 @@ header {
 
 .whoIs h2,
 .favouriteThings h2,
-.travelled h2 {
+.travelled h2,
+.journey h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 3.2rem;
   color: #2C2C2C;
@@ -393,7 +394,8 @@ header {
 
 .whoIs p,
 .favouriteThings p,
-.travelled p {
+.travelled p,
+.journey p {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   color: #2C2C2C;
@@ -409,7 +411,8 @@ header {
 
 .whoIs a,
 .favouriteThings a,
-.travelled a {
+.travelled a,
+.journey a {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   color: #2C2C2C;
@@ -507,6 +510,35 @@ header {
   line-height: 32px;
   letter-spacing: 0px;
   padding-top: 15px;
+}
+
+.journey {
+  background-color: #F0EFED;
+}
+
+.journey > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edgeOfBuilding {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.edgeOfBuilding img {
+  -webkit-box-shadow: 15px 15px #F6A823;
+          box-shadow: 15px 15px #F6A823;
+}
+
+.journey article {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 footer {

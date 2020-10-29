@@ -91,14 +91,16 @@ header {
 
 .whoIs h2,
 .favouriteThings h2,
-.travelled h2 {
+.travelled h2,
+.journey h2 {
     @include robotoFont (3.2rem, $black, 700, 1, 1px);
     text-transform: uppercase;
 }
 
 .whoIs p,
 .favouriteThings p,
-.travelled p {
+.travelled p,
+.journey p {
     @include robotoFont (2rem, $black, 400, 32px, 0px);
     // width: 90%;
     margin: 25px 0 40px 0;
@@ -110,7 +112,8 @@ header {
 
 .whoIs a,
 .favouriteThings a,
-.travelled a {
+.travelled a,
+.journey a {
     @include robotoFont (2rem, $black, 700, 32px, 1px);
     background-color: $accent;
     padding: 15px;
@@ -187,6 +190,36 @@ header {
     @include robotoFont (2rem, $black, 400, 32px, 0px);
     padding-top: 15px;
 }
+
+
+.journey {
+    background-color: $whiteShade;
+}
+
+.journey > div {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+.edgeOfBuilding {
+    flex-basis: 25%;
+
+}
+
+.edgeOfBuilding img {
+    box-shadow: 15px 15px $orangeyYellow;
+}
+
+.journey article {
+    flex-basis: 65%;
+}
+
+
+
+
+
+
 
 
 
