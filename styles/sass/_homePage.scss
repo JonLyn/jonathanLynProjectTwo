@@ -3,16 +3,15 @@
 //  HEADER SECTION
 header {
     background-color: $orangeyYellow;
-    height: 90vh;
+    height: 100vh;
     max-height: 700px;
-    margin-bottom: 10vh;
-    border: 3px solid red;
+    // border: 3px solid red;
     display: flex;
     flex-direction: column;
 }
 
 .hero {
-    border: 5px dashed yellow;
+    // border: 5px dashed yellow;
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -21,7 +20,7 @@ header {
 .title {
     display: flex;
     justify-content: flex-start;
-    border: 3px solid green;
+    // border: 3px solid green;
     flex-basis: 50%; 
     position: relative;
     left: 57px;
@@ -52,23 +51,99 @@ header {
     // flex-basis: 30%;
     width: 50%;
     position: relative;
-    border: 3px solid blue;
+    // border: 3px solid blue;
     flex-shrink: 1;
 }
 
 .orangesPic img {
-    box-shadow: 15px 15px white;
+    // box-shadow: 15px 15px white;
     position: absolute;
-    right:15px;
+    // right:15px;
     top: 0;
     min-width: 450px;
 }
 
 .overflow {
-    border: 3px dashed pink;
+    // border: 3px dashed pink;
     position: relative;
     width: 90%;
     height: 110%;
     overflow: hidden;
+    box-shadow: 15px 15px white;
 }
+
+// MAIN SECTIONS
+
+// WHO IS SOPHIE SECTION
+
+.whoIs {
+    background-color: $whiteShade;
+    padding: 75px 0;
+}
+
+.favouriteThings {
+    padding: 50px 0;
+}
+
+.whoIs h2,
+.favouriteThings h2,
+.travelled h2 {
+    @include robotoFont (3.2rem, $black, 700, 1, 1px);
+    text-transform: uppercase;
+}
+
+.whoIs p,
+.favouriteThings p,
+.travelled p {
+    @include robotoFont (2rem, $black, 400, 32px, 0px);
+    // width: 90%;
+    margin: 25px 0 40px 0;
+}
+
+.travelled article {
+   
+    text-align: right;
+}
+
+.whoIs a,
+.favouriteThings a,
+.travelled a {
+    @include robotoFont (2rem, $black, 700, 32px, 1px);
+    background-color: $accent;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+// SOPHIE'S FAVOURITE THINGS SECTION
+
+.favouriteThings,
+.travelled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 3px solid yellow;
+    
+}
+
+.brownDogFlexbox,
+.favouriteThings article,
+.beachChairsFlexbox,
+.travelled article {
+    flex-basis: 45%;
+    // border: 3px solid purple;
+    position: relative;
+}
+
+.brownDog {
+    box-shadow: 15px 15px $rustRed, -113px 15px $rustRed;
+    position: absolute;
+    top: -215px;
+
+}
+
+.beachChairs {
+    box-shadow: 15px 15px $orangeyYellow, 113px 15px $orangeyYellow;
+}
+
+
 
