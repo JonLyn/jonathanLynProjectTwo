@@ -247,6 +247,7 @@ body {
 
 .horizNav {
   padding: 30px 0;
+  background-color: #F6A823;
 }
 
 .horizNav ul {
@@ -282,7 +283,7 @@ body {
   color: #2C2C2C;
 }
 
-header {
+.homepageHeader {
   background-color: #F6A823;
   height: 100vh;
   max-height: 700px;
@@ -554,6 +555,76 @@ header {
 .gallery div {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+.contactHero {
+  background-image: url("../assets/contact-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  max-height: 300px;
+  background-position: center;
+}
+
+.contactInfo {
+  background-color: #F0EFED;
+  padding: 100px 0;
+}
+
+.contactInfo .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.iconsAddress {
+  background-color: white;
+  padding: 40px;
+}
+
+.contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.socialMediaIcons i {
+  color: #F6A823;
+}
+
+.socialMediaIcons li {
+  font-size: 2rem;
+  margin-right: 25px;
+}
+
+.address p:first-child {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin: 15px 0;
+}
+
+.address p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #2C2C2C;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-transform: capitalize;
 }
 
 footer {

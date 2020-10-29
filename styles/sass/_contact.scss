@@ -1,0 +1,55 @@
+.contactHero {
+    background-image: url("../assets/contact-image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    max-height: 300px;
+    background-position: center;
+}
+
+.contactInfo {
+    background-color: $whiteShade;
+    padding: 100px 0;
+}
+
+.contactInfo .wrapper {
+    display: flex;
+}
+
+.iconsAddress {
+    background-color: white;
+    padding: 40px;
+
+}
+
+.contactInfo ul {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMediaIcons i {
+    color: $orangeyYellow;
+}
+
+.socialMediaIcons li {
+    font-size: 2rem;
+    margin-right: 25px;
+}
+
+.address p:first-child {
+    @include robotoFont (2rem, $black, 700, 32px, 0);
+    margin: 15px 0;
+}
+
+.address p {
+    @include robotoFont (2rem, $black, 400, 32px, 0);
+    text-transform: capitalize;
+}
+
+
+
+
