@@ -7,19 +7,28 @@
     background-position: center;
 }
 
-.contactInfo {
+.contactMain {
     background-color: $whiteShade;
     padding: 100px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.contactInfo .wrapper {
+.contactMain .wrapper {
     display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    width: 40%;
 }
 
 .iconsAddress {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 40px;
-
+    margin-right: 50px;
 }
 
 .contactInfo ul {
@@ -49,6 +58,55 @@
     @include robotoFont (2rem, $black, 400, 32px, 0);
     text-transform: capitalize;
 }
+
+
+
+
+.formSection {
+    width: 60%;
+
+}
+
+form {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90%;
+}
+
+input,
+textarea {
+    padding: 15px;
+}
+
+.name,
+.email {
+    display: block;
+    width: calc(50% - 5px);
+    margin-bottom: 15px;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.message {
+    width: 100%;
+    height: calc(100% - 47px);
+    display: block;
+    margin-bottom: 15px;
+}
+
+button {
+    @include robotoFont (2rem, $black, 700, 32px, 0);
+    text-transform: uppercase;
+    background-color: $accent;
+    width: 100%;
+}
+
+
 
 
 
