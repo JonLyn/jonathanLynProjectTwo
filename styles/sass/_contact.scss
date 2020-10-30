@@ -76,50 +76,49 @@
 
 
 
-.formSection {
-    width: 60%;
+// .formSection {
+//     width: 60%;
+// }
 
-}
+// form {
+//     max-width: 100%;
+//     flex-basis: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     height: 100%;
+// }
 
-form {
-    max-width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100%;
-}
+// input,
+// textarea {
+//     padding: 15px;
+//     font-style: italic;
+// }
 
-input,
-textarea {
-    padding: 15px;
-    font-style: italic;
-}
+// .name,
+// .email {
+//     display: block;
+//     width: calc(50% - 5px);
+//     margin-bottom: 15px;
+// }
 
-.name,
-.email {
-    display: block;
-    width: calc(50% - 5px);
-    margin-bottom: 15px;
-}
+// .name {
+//     margin-right: 10px;
+// }
 
-.name {
-    margin-right: 10px;
-}
+// .message {
+//     width: 100%;
+//     height: calc(100%);
+//     display: block;
+//     margin-bottom: 15px;
+// }
 
-.message {
-    width: 100%;
-    height: calc(100%);
-    display: block;
-    margin-bottom: 15px;
-}
-
-button {
-    @include robotoFont (2rem, $black, 700, 32px, 0);
-    text-transform: uppercase;
-    background-color: $accent;
-    width: 100%;
-}
+// button {
+//     @include robotoFont (2rem, $black, 700, 32px, 0);
+//     text-transform: uppercase;
+//     background-color: $accent;
+//     width: 100%;
+// }
 
 
 
