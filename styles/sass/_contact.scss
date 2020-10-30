@@ -9,7 +9,7 @@
 
 .contactMain {
     background-color: $whiteShade;
-    padding: 100px 0;
+    padding: 75px 0 200px 0;
     display: flex;
     justify-content: center;
 }
@@ -17,6 +17,20 @@
 .contactMain .wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.contactHeader {
+    position: relative;
+}
+
+.contactHero p {
+    font-family: 'Lora', serif;
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black;
+    position: absolute;
+    bottom: -40px;
 }
 
 .contactInfo {
@@ -27,7 +41,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 40px;
+    padding: 30px;
     margin-right: 50px;
 }
 
@@ -73,12 +87,13 @@ form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 90%;
+    height: 100%;
 }
 
 input,
 textarea {
     padding: 15px;
+    font-style: italic;
 }
 
 .name,
@@ -94,7 +109,7 @@ textarea {
 
 .message {
     width: 100%;
-    height: calc(100% - 47px);
+    height: calc(100%);
     display: block;
     margin-bottom: 15px;
 }
