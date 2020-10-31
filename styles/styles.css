@@ -687,7 +687,10 @@ body {
 
 .blogMain {
   background-color: #F0EFED;
-  padding: 100px 0;
+  padding: 100px 0 200px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .blogMain .wrapper {
@@ -696,7 +699,6 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  width: 100%;
 }
 
 .firstColumn,
@@ -853,6 +855,15 @@ body {
 
 .formSection {
   width: 60%;
+}
+
+.wrapper .formSection {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 5 / 2 / 6 / 4;
+  width: 100%;
 }
 
 form {
