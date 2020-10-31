@@ -22,18 +22,130 @@
     bottom: -40px;
 }
 
+.blogMain {
+    background-color: $whiteShade;
+    padding: 100px 0;
+}
+
 .blogMain .wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 12;
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 5000px;
+    gap: 50px;
+    // border: 4px solid red;
+    width: 100%;
+    // height: 1000px;
+
+}
+
+.firstColumn,
+.recentPosts,
+.whyBlog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.aboutSophie {
+    margin-bottom: 25px;
+}
+
+// Fix the other H2s *****************************************
+.aboutSophie h2,
+.recentPosts h2,
+.whyBlog h2 {
+    @include robotoFont (2.4rem, $black, 700, 1, 1px);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.aboutSophie p:last-child,
+.recentPosts ul,
+.whyBlog p {
+    @include robotoFont (2rem, $black, 400, 32px, 0);
 }
 
 .aboutSophie,
 .recentPosts,
-.whyBlog,
-.recentComms {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
+.whyBlog {
+    background-color:white;
+    height: fit-content;
+    padding: 30px;
 }
+
+.recentPosts ul {
+    padding-left: 20px;
+}
+
+.recentPosts li {
+    list-style: disc;
+    color: $orangeyYellow;
+}
+
+.recentPosts a {
+    color: $black;
+    padding-left: 15px;
+}
+
+.whyBlog {
+    grid-area: 1 / 2 / 3 / 4;
+    border-bottom: 5px solid $orangeyYellow;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.date span,
+.commentDate {
+    @include robotoFont (2.4rem, $black, 700, 1, 1px);
+    color: $darkGreyBlue;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.whyBlog p {
+    margin-bottom: 15px;
+}
+
+.recentCommsOne {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.recentCommsTwo {
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.recentCommsOne,
+.recentCommsTwo {
+    width: 100%;
+    background-color:white;
+    padding: 30px;
+    display: flex;
+    height: fit-content;
+}
+
+.recentCommsOne img,
+.recentCommsTwo img {
+    width: 75px;
+}
+
+.recentCommsOne article,
+.recentCommsTwo article {
+    padding-left: 20px;
+}
+
+.comment {
+    @include robotoFont (2rem, $black, 400, 1, 1px);
+}
+
+.recentCommsTwo {
+    border-bottom: 5px solid $orangeyYellow;
+}
+
+
+
+
