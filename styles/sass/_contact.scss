@@ -71,6 +71,7 @@
 .address p {
     @include robotoFont (2rem, $black, 400, 32px, 0);
     text-transform: capitalize;
+    font-style: normal;
 }
 
 

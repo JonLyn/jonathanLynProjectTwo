@@ -40,7 +40,7 @@
 
 .circleText {
     position: absolute;
-    left: -65px;
+    left: -60px;
     top: -80px;
 }
 
@@ -60,7 +60,8 @@
     position: absolute;
     // right:15px;
     top: 0;
-    min-width: 450px;
+    min-width: 465px;
+    min-height: 655px;
 }
 
 .overflow {
@@ -163,6 +164,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 50px;
 }
 
 .iconSection li {
@@ -226,6 +228,54 @@
     flex-basis: 32%;
 }
 
+@media (max-width: 1160px) {
+    
+    // .hero {
+    //     background-image: url("../assets/home-image-1.jpg");
+    //     background-repeat: no-repeat;
+    //     background-position: right;
+    // }
+
+
+    // .overflow {
+    //     min-width: 513px;
+
+.favouriteThings {
+    flex-wrap: wrap;
+} 
+
+// .brownDogFlexbox {
+//     display: block;
+//     height: 300px;
+//     flex-basis: 100%;
+// }
+
+.brownDogFlexbox {
+    min-width: 400px;
+    // border: 3px solid red;
+    // margin-right: 50px;
+    height: 250px;
+    margin-bottom: 25px;
+    flex-basis: 100%;
+}
+
+.brownDog {
+    top: -80px;
+    right: 0;
+    box-shadow: -700px 15px $rustRed, -300px 15px $rustRed, 15px 15px $rustRed;
+    max-width: 500px;
+    
+}
+
+.favouriteThings article {
+    flex-basis: 100%;
+}
+
+
+
+
+
+}  
 
 
 

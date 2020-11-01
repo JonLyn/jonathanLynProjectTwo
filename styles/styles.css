@@ -335,7 +335,7 @@ body {
 
 .circleText {
   position: absolute;
-  left: -65px;
+  left: -60px;
   top: -80px;
 }
 
@@ -355,7 +355,8 @@ body {
 .orangesPic img {
   position: absolute;
   top: 0;
-  min-width: 450px;
+  min-width: 465px;
+  min-height: 655px;
 }
 
 .overflow {
@@ -475,6 +476,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 50px;
 }
 
 .iconSection li {
@@ -555,6 +557,31 @@ body {
 .gallery div {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+@media (max-width: 1160px) {
+  .favouriteThings {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .brownDogFlexbox {
+    min-width: 400px;
+    height: 250px;
+    margin-bottom: 25px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .brownDog {
+    top: -80px;
+    right: 0;
+    -webkit-box-shadow: -700px 15px #A82706, -300px 15px #A82706, 15px 15px #A82706;
+            box-shadow: -700px 15px #A82706, -300px 15px #A82706, 15px 15px #A82706;
+    max-width: 500px;
+  }
+  .favouriteThings article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .contactHero {
@@ -660,6 +687,7 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   text-transform: capitalize;
+  font-style: normal;
 }
 
 .blogHero {
