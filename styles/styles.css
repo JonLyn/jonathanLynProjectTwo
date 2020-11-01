@@ -1131,6 +1131,45 @@ body {
   border-bottom: 5px solid #F6A823;
 }
 
+@media (max-width: 961px) {
+  .firstColumn {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  .whyBlog {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .recentCommsOne {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  .recentCommsTwo {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 4 / 1 / 5 / 4;
+  }
+  .aboutSophie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutSophie div:first-child {
+    margin-right: 20px;
+  }
+}
+
 .formSection {
   width: 60%;
 }
@@ -1193,6 +1232,16 @@ button {
   text-transform: uppercase;
   background-color: #05AFC1;
   width: 100%;
+}
+
+@media (max-width: 961px) {
+  .wrapper .formSection {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 5 / 1 / 6 / 4;
+  }
 }
 
 footer {
