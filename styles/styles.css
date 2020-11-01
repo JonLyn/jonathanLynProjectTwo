@@ -313,10 +313,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   position: relative;
   left: 57px;
+  z-index: 10;
 }
 
 .title h1 {
@@ -327,7 +326,7 @@ body {
   line-height: 92px;
   letter-spacing: 0;
   text-transform: uppercase;
-  position: relative;
+  position: absolute;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -346,21 +345,20 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   position: relative;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  min-width: 565px;
 }
 
 .orangesPic img {
-  position: absolute;
   top: 0;
   min-width: 465px;
   min-height: 655px;
 }
 
 .overflow {
-  position: relative;
+  position: absolute;
   width: 90%;
   height: 110%;
   overflow: hidden;
@@ -561,6 +559,19 @@ body {
 }
 
 @media (max-width: 1160px) {
+  .overflow {
+    height: calc(95%);
+  }
+  .overflow::after {
+    content: '';
+    background: -webkit-gradient(linear, left top, right top, from(#F6A823), to(rgba(246, 168, 35, 0)));
+    background: linear-gradient(to right, #F6A823, rgba(246, 168, 35, 0));
+    width: 509px;
+    height: 712px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .favouriteThings,
   .travelled {
     -ms-flex-wrap: wrap;

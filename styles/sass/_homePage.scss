@@ -5,7 +5,6 @@
     background-color: $orangeyYellow;
     height: 100vh;
     max-height: 700px;
-    // border: 3px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -21,9 +20,9 @@
     display: flex;
     justify-content: flex-start;
     // border: 3px solid green;
-    flex-basis: 50%; 
     position: relative;
     left: 57px;
+    z-index: 10;
 }
 
 .title h1 {
@@ -34,7 +33,7 @@
     line-height: 92px;
     letter-spacing: 0;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
     align-self: center;
 }
 
@@ -45,20 +44,16 @@
 }
 
 .orangesPic {
-    // margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    // flex-basis: 30%;
-    width: 50%;
+    flex-basis: 50%;
     position: relative;
     // border: 3px solid blue;
-    flex-shrink: 1;
+    min-width: 565px;
 }
 
 .orangesPic img {
-    // box-shadow: 15px 15px white;
-    position: absolute;
-    // right:15px;
+    // position: absolute;
     top: 0;
     min-width: 465px;
     min-height: 655px;
@@ -66,11 +61,13 @@
 
 .overflow {
     // border: 3px dashed pink;
-    position: relative;
+    position: absolute;
     width: 90%;
     height: 110%;
     overflow: hidden;
     box-shadow: 15px 15px white;
+    // min-width: 497px;
+    // max-height: 655px;
 }
 
 // MAIN SECTIONS
@@ -240,9 +237,24 @@
 
     // .overflow {
     //     min-width: 513px;
+.overflow {
+    // opacity: 0.5;
+    height: calc(95%);
+    // background: linear-gradient(to right, $orangeyYellow, rgba(246, 168, 35, 0));
+}
+
+.overflow::after {
+    content: '';
+    background: linear-gradient(to right, $orangeyYellow, rgba(246, 168, 35, 0));
+    width: 509px;
+    height: 712px;
+    position: absolute;
+    top: 0;
+    right: 0
+
+}
 
 
-    
 .favouriteThings,
 .travelled {
     flex-wrap: wrap;
