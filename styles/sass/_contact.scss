@@ -23,14 +23,14 @@
     position: relative;
 }
 
-.contactHero p {
+.contactHero h1 {
     font-family: 'Lora', serif;
     font-size: 8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $black;
     position: absolute;
-    bottom: -40px;
+    bottom: -93px;
 }
 
 .contactInfo {
@@ -75,7 +75,36 @@
 }
 
 
+@media (max-width: 768px) {
+    .contactHero h1 {
+        font-size: 6rem;
+        bottom: -70px;
+    }
 
+    .contactMain .wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contactInfo {
+        width: 100%; 
+    }
+
+    .iconsAddress {
+        margin: 0 0 40px 0;
+    }
+
+    .contactMain {
+        padding-bottom: 150px;
+        height: 800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactHero h1 {
+        bottom: -108px;
+    }
+}
 
 // .formSection {
 //     width: 60%;

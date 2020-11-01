@@ -47,7 +47,7 @@
     /* Display hamburger menu */
     .hamburgerMenu {
         display: block;
-        padding: 30px 0;
+        padding: 30px 0 31px 0;
         background-color: $orangeyYellow;
         z-index: 20;
     }
@@ -56,7 +56,7 @@
     .menuToggle {
         display: block;
         position: relative;
-        left: 80%;
+        left: 75%;
         top: 0;
     }
 
@@ -75,7 +75,7 @@
     .menuToggle ul {
         background-color: $orangeyYellow;
         border-bottom: 7px solid $whiteShade;
-        width: 125px;
+        width: 160px;
         padding-bottom: 10px;
     }
 
