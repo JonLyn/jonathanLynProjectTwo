@@ -560,27 +560,44 @@ body {
 }
 
 @media (max-width: 1160px) {
-  .favouriteThings {
+  .favouriteThings,
+  .travelled {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .brownDogFlexbox {
+  .brownDogFlexbox,
+  .beachChairsFlexbox {
     min-width: 400px;
-    height: 250px;
-    margin-bottom: 25px;
+    height: 185px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .brownDog {
     top: -80px;
-    right: 0;
-    -webkit-box-shadow: -700px 15px #A82706, -300px 15px #A82706, 15px 15px #A82706;
-            box-shadow: -700px 15px #A82706, -300px 15px #A82706, 15px 15px #A82706;
-    max-width: 500px;
+    left: 0;
+    -webkit-box-shadow: 700px 15px #A82706, 300px 15px #A82706, 15px 15px #A82706;
+            box-shadow: 700px 15px #A82706, 300px 15px #A82706, 15px 15px #A82706;
+    max-width: 400px;
   }
-  .favouriteThings article {
+  .favouriteThings article,
+  .travelled article {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .favouriteThings article {
+    padding: 40px 0;
+    margin-bottom: 75px;
+  }
+  .beachChairsFlexbox {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .beachChairs {
+    max-width: 400px;
+    right: 0;
+    -webkit-box-shadow: -630px 15px #F6A823, -350px 15px #F6A823, 15px 15px #F6A823;
+            box-shadow: -630px 15px #F6A823, -350px 15px #F6A823, 15px 15px #F6A823;
   }
 }
 

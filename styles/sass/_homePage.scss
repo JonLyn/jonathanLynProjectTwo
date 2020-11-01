@@ -240,35 +240,48 @@
     // .overflow {
     //     min-width: 513px;
 
-.favouriteThings {
+.favouriteThings,
+.travelled {
     flex-wrap: wrap;
 } 
 
-// .brownDogFlexbox {
-//     display: block;
-//     height: 300px;
-//     flex-basis: 100%;
-// }
-
-.brownDogFlexbox {
+.brownDogFlexbox,
+.beachChairsFlexbox {
     min-width: 400px;
-    // border: 3px solid red;
-    // margin-right: 50px;
-    height: 250px;
-    margin-bottom: 25px;
+    height: 185px;
     flex-basis: 100%;
 }
 
 .brownDog {
     top: -80px;
-    right: 0;
-    box-shadow: -700px 15px $rustRed, -300px 15px $rustRed, 15px 15px $rustRed;
-    max-width: 500px;
+    left: 0;
+    box-shadow: 700px 15px $rustRed, 300px 15px $rustRed, 15px 15px $rustRed;
+    max-width: 400px;
     
 }
 
-.favouriteThings article {
+.favouriteThings article,
+.travelled article {
     flex-basis: 100%;
+}
+
+.favouriteThings article {
+    padding: 40px 0;
+    margin-bottom: 75px;
+}
+
+
+
+.beachChairsFlexbox {
+    order: -1;
+}
+
+.beachChairs {
+    max-width: 400px;
+    right: 0;
+    box-shadow: -630px 15px $orangeyYellow,
+    -350px 15px $orangeyYellow,
+    15px 15px $orangeyYellow;
 }
 
 
