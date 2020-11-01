@@ -314,10 +314,14 @@
 
 
 @media (max-width: 961px) {
+
     .iconSection li {
         flex-basis: 80%;
     }
 }
+
+
+
 
 @media (max-width: 768px) {
     .journey .wrapper {
@@ -337,7 +341,28 @@
     }
 }
 
+@media (max-width: 580px) {
+    .title h1 {
+        font-size: 10rem;
+    }
+}
+
+
+
 @media (max-width: 480px) {
+    .title h1 {
+        font-size: 8rem;
+    }
+
+    .overflow {
+        right: 100px;
+        opacity: 0.5;
+    }
+
+    .overflow::after {
+        display: none;
+    }
+    
     .gallery {
         flex-direction: column;
         padding: 50px 0;
