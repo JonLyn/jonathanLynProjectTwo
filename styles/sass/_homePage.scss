@@ -157,7 +157,7 @@
 
 .iconSection {
     background: $whiteShade;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 .iconSection ul {
@@ -170,6 +170,7 @@
 .iconSection li {
     flex-basis: 45%;  
     margin-bottom: 50px;
+    margin-right: 40px;
 
 }
 
@@ -198,7 +199,7 @@
     background-color: $whiteShade;
 }
 
-.journey > div {
+.journey .wrapper {
     display: flex;
     padding: 100px 0;
     justify-content: space-between;
@@ -240,6 +241,8 @@
     // .overflow {
     //     min-width: 513px;
 
+
+    
 .favouriteThings,
 .travelled {
     flex-wrap: wrap;
@@ -284,11 +287,54 @@
     15px 15px $orangeyYellow;
 }
 
+.iconSection ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    // text-align: center;
+    margin: 0 auto;
+}
 
-
-
+.iconSection li {
+    min-width: 300px;
+}
 
 }  
+
+
+@media (max-width: 961px) {
+    .iconSection li {
+        flex-basis: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey .wrapper {
+        flex-direction: column;
+        padding: 75px 0 50px 0;
+    }
+
+    .edgeOfBuilding {
+        width: 170px;
+        box-shadow: 150px 15px $orangeyYellow,
+        315px 15px $orangeyYellow,
+        450px 15px $orangeyYellow, 600px 15px $orangeyYellow;
+    }
+
+    .journey article {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .gallery div {
+        margin: 10px 0;
+    }
+}
 
 
 
