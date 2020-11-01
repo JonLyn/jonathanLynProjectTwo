@@ -74,6 +74,11 @@
     font-style: normal;
 }
 
+.address a {
+    text-transform: none;
+    color: $black;
+}
+
 
 @media (max-width: 768px) {
     .contactHero h1 {
