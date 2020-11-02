@@ -16,6 +16,7 @@
     left: 0;
 }
 
+// h1 and header background image
 .blogHero {
     background-image: url("../assets/blog-image-1.jpg");
     background-repeat: no-repeat;
@@ -24,7 +25,6 @@
     max-height: 300px;
     background-position: center;
 }
-
 
 .blogHeader {
     position: relative;
@@ -40,6 +40,9 @@
     bottom: -93px;
 }
 
+// MAIN SECTION 
+
+// About Sophie section, recent blog links and blog article
 .blogMain {
     background-color: $whiteShade;
     padding: 100px 0 200px 0;
@@ -65,7 +68,6 @@
     margin-bottom: 25px;
 }
 
-// Fix the other H2s *****************************************
 .aboutSophie h2,
 .recentPosts h2,
 .whyBlog h2 {
@@ -98,8 +100,6 @@
 }
 
 .recentPosts span {
-    // position: relative;
-    // left: 15px;
     margin-left: 15px;
 }
 
@@ -135,6 +135,7 @@
     margin-bottom: 15px;
 }
 
+// User comments
 .recentCommsOne {
     grid-area: 3 / 2 / 4 / 4;
 }

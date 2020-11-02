@@ -1,4 +1,7 @@
+// ========= FIRST BREAKPOINT - 1160px ========
+
 @media (max-width: 1160px) {
+    // Add homepage header opacity and gradient
     .overflow {
         height: calc(95%);
     }
@@ -13,6 +16,7 @@
         right: 0
     }
 
+    // Vertically stack articles and images
     .favouriteThings,
     .travelled {
         flex-wrap: wrap;
@@ -54,26 +58,26 @@
         -350px 15px $orangeyYellow,
         15px 15px $orangeyYellow;
     }
+}  
 
+// ========= SECOND BREAKPOINT - 961px ========
+
+@media (max-width: 961px) {
+    // Vertically stack mid-page navigation links
     .iconSection ul {
         flex-wrap: wrap;
         justify-content: center;
-        // text-align: center;
         margin: 0 auto;
     }
 
     .iconSection li {
         min-width: 300px;
     }
-}  
-
-// ========= FIRST BREAKPOINT - 961px ========
-
-@media (max-width: 961px) {
     .iconSection li {
         flex-basis: 80%;
     }
 
+    // Rearrange blog sections
     .wrapper .formSection {
         grid-area: 5 / 1 / 6 / 4;
     }
@@ -104,10 +108,10 @@
     }
 }
 
-// ========= SECOND BREAKPOINT - 768px ========
-
+// ========= THIRD BREAKPOINT - 768px ========
 
 @media (max-width: 768px) {
+    // Vertically stack journey section
     .journey .wrapper {
         flex-direction: column;
         padding: 75px 0 50px 0;
@@ -124,10 +128,12 @@
         padding-top: 50px;
     }
 
+    // Adjust contact title positioning
     .contactHero h1 {
         bottom: -93px;
     }
 
+    // Vertically stack contact info and message form 
     .contactMain .wrapper {
         flex-direction: column;
         justify-content: space-evenly;
@@ -151,9 +157,10 @@
     }
 }
 
-// ========= THIRD BREAKPOINT - 650px ========
+// ========= FOURTH BREAKPOINT - 650px ========
 
 @media (max-width:650px) {
+    // Hide horizontal navigation menu
     .horizNav {
         display: none;
     }
@@ -268,24 +275,26 @@
         width: 300px;
         bottom: -145px;
     }
-
 }
 
-// ========= FOURTH BREAKPOINT - 580px ========
+// ========= FIFTH BREAKPOINT - 580px ========
 
 @media (max-width: 580px) {
+    // Reduce homepage title size
     .title h1 {
         font-size: 10rem;
     }
 }
 
-// ========= FIFTH BREAKPOINT - 480px ========
+// ========= SIXTH BREAKPOINT - 480px ========
 
 @media (max-width: 480px) {
+    // Reduce homepage title size
     .title h1 {
         font-size: 8rem;
     }
 
+    // Adjust positon and opacity of title image
     .overflow {
         right: 100px;
         opacity: 0.5;
@@ -295,6 +304,7 @@
         display: none;
     }
     
+    // Vertically stack photo gallery images
     .gallery {
         flex-direction: column;
         padding: 50px 0;
@@ -304,6 +314,7 @@
         margin: 10px 0;
     }
 
+    // Adjust contact page title positioning
     .contactHero h1 {
         bottom: -145px;
     }

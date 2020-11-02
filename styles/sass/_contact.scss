@@ -16,7 +16,7 @@
     left: 0;
 }
 
-
+// h1 and header background image
 .contactHero {
     background-image: url("../assets/contact-image-1.jpg");
     background-repeat: no-repeat;
@@ -52,6 +52,9 @@
     bottom: -93px;
 }
 
+// MAIN SECTION
+
+// Contact info and social media links
 .contactInfo {
     width: 40%;
 }
@@ -82,7 +85,6 @@
 .socialMediaIcons i:focus {
     color: $rustRed;
     border-bottom: 3px solid $rustRed;
-
 }
 
 .socialMediaIcons li {

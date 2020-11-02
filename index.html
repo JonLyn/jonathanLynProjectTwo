@@ -14,6 +14,7 @@
     <a href="#whoIs" class="skipLink">Skip to main content.</a>
 
     <header class="homepageHeader">
+        <!-- Navigation menu -->
         <nav class="horizNav">
             <div class="wrapper">
                 <ul>
@@ -35,11 +36,11 @@
                 </ul>
             </div>
         </nav>
-
         <!-- Hamburger menu navigation and links -->
         <nav class="hamburgerMenu">
             <div class="menuToggle">
-                <input type="checkbox" class="checkbox">
+                <label for="navigationDropdown"><span class="srOnly">Dropdown menu</span></label>
+                <input type="checkbox" class="checkbox" id="navigationDropdown">
                 <span class="topBun"></span>
                 <span class="meat"></span>
                 <span class="bottomBun"></span>
@@ -59,7 +60,7 @@
                 </ul>
             </div>
         </nav>
-
+        <!-- Header image and stylized title image -->
         <div class="hero wrapper">
             <div class="title">
                 <h1><span class="circleText"><img src="./assets/circle-text.png"
@@ -74,7 +75,7 @@
         </div>
     </header>
 
-
+    <!-- About Sophie intro and articles about Sophie section -->
     <main>
         <section class="whoIs" id="whoIs">
             <article class="wrapper">
@@ -83,7 +84,6 @@
                 <a href="#">Find out more</a>
             </article>
         </section>
-
         <section class="favouriteThings wrapper">
             <div class="brownDogFlexbox">
                 <div class="brownDog">
@@ -97,7 +97,6 @@
                 <a href="#">Read more</a>
             </article>
         </section>
-
         <section class="travelled wrapper">
             <article>
                 <h2>Where she's travelled</h2>
@@ -110,36 +109,35 @@
                     <img src="./assets/home-image-3.jpg" alt="Vacant blue beach chairs under orange beach umbrellas">
                 </div>
             </div>
-            
         </section>
-
+        <!-- Additional navigation to photos, about, blog, and contact pages -->
         <section class="iconSection">
             <nav class="wrapper">
                 <ul>
                     <li>
-                        <a href="#"><i class="fas fa-image"></i>Photos</a>
+                        <a href="#gallery"><i class="fas fa-image"></i>Photos</a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus corporis illo exercitationem cumque. natus saepe modi officia libero vitae?</p>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-user"></i>About</a>
+                        <a href="#whoIs"><i class="fas fa-user"></i>About</a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur placeat molestias repellendus quos et. Expedita sequi, maiores soluta ipsam!</p>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-desktop"></i>Blog</a>
+                        <a href="./blog.html"><i class="fas fa-desktop"></i>Blog</a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, dolorum voluptates accusamus dolorem reprehenderit illum quod impedit error.</p>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-phone"></i>Get in touch</a>
+                        <a href="./contact.html"><i class="fas fa-phone"></i>Get in touch</a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repellendus qui fuga voluptatum, incidunt magnam laborum iure asperiores minus.</p>
                     </li>
                 </ul>
             </nav>
         </section>
-
+        <!-- Full width photo of theatre seats -->
         <section class="emptyTheatreSeats">
             <img src="./assets/home-image-4.jpg" alt="Rows of empty orange coloured seats in a theatre">
         </section>
-
+        <!-- Sophie's journey article -->
         <section class="journey">
             <div class="wrapper">
                 <div class="edgeOfBuilding">
@@ -154,8 +152,8 @@
                 </article>
             </div>
         </section>
-
-        <section class="gallery wrapper">
+        <!-- Gallery images -->
+        <section class="gallery wrapper" id="gallery">
             <div>
                 <img src="./assets/home-image-6.jpg" alt="Blue bike with a wire basket on the handlebars in front of an orange wall">
             </div>
@@ -167,7 +165,8 @@
             </div>
         </section>
     </main>
-
+    
+    <!-- Footer and link to Juno College website -->
     <footer>
         <span>Copyright &copy 2020 Juno College |</span>
         <span>Created at <a href="https://junocollege.com">Juno College</a></span>

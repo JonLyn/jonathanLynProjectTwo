@@ -1,3 +1,5 @@
+// User input forms
+
 .formSection {
     width: 60%;
 }
@@ -6,7 +8,6 @@
     grid-area: 5 / 2 / 6 / 4;
     width: 100%;
 }
-
 
 form {
     max-width: 100%;
@@ -59,10 +60,4 @@ input:focus,
 textarea:hover,
 textarea:focus {
     border-bottom: 3px solid $rustRed;
-}
-
-@media (max-width: 961px) {
-    .wrapper .formSection {
-        grid-area: 5 / 1 / 6 / 4;
-    }
 }

@@ -10,7 +10,7 @@
 <body>
     <!-- Skip to main content link for accessibility -->
     <a href="#whyBlog" class="skipLink">Skip to main content.</a>
-
+    <!-- Navigation menu -->
     <header class="blogHeader">
         <nav class="horizNav">
             <div class="wrapper">
@@ -33,11 +33,11 @@
                 </ul>
             </div>
         </nav>
-
         <!-- Hamburger menu navigation and links -->
         <nav class="hamburgerMenu">
             <div class="menuToggle">
-                <input type="checkbox" class="checkbox">
+                <label for="navigationDropdown"><span class="srOnly">Dropdown menu</span></label>
+                <input type="checkbox" class="checkbox" id="navigationDropdown">
                 <span class="topBun"></span>
                 <span class="meat"></span>
                 <span class="bottomBun"></span>
@@ -57,7 +57,7 @@
                 </ul>
             </div>
         </nav>
-
+        <!-- Page title and background image -->
         <div class="blogHero">
             <div class="wrapper">
                 <h1>Blog</h1>
@@ -65,6 +65,7 @@
         </div>
     </header>
 
+    <!-- About Sophie blurb and links to recent blog posts -->
     <main class="blogMain">
         <div class="wrapper">
             <div class="firstColumn">
@@ -77,7 +78,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ea facilis.</p>
                     </div>
                 </div>
-                
                 <div class="recentPosts">
                     <h2>Recent posts</h2>
                     <ul>
@@ -96,7 +96,7 @@
                     </ul>
                 </div>
             </div>
-            
+            <!-- Full length blog section -->
             <div class="whyBlog" id="whyBlog">
                 <h2>Why I became a blogger</h2>
                 <p class="date">Monday October 8th, 2018 by <span>Sophie Barlow</span></p>
@@ -132,7 +132,7 @@
                     </p>
                 </article>
             </div>
-
+            <!-- Blog comments section -->
             <div class="recentCommsOne">
                 <div>
                     <img src="./assets/blog-image-3.jpg" alt="Bust of a male wearing a navy collared shirt with white polka dots">
@@ -143,7 +143,6 @@
                     cupiditate, ducimus quos dolorem obcaecati ex, vitae unde ipsum aliquam illo vel dolor.</p>
                 </article>
             </div>
-
             <div class="recentCommsTwo">
                 <div>
                     <img src="./assets/blog-image-4.jpg" alt="Waist up image of a female wearing sunglasses and a white t-shirt with her hands behind her neck looking away from camera ">
@@ -154,31 +153,25 @@
                     cupiditate, ducimus quos dolorem obcaecati ex, vitae unde ipsum aliquam illo vel dolor.</p>
                 </article>
             </div>
-
+            <!-- User input comment form -->
             <section class="formSection">
                 <form action="#">
                     <label for="name"><span class="srOnly">Your name</span></label>
                     <input type="text" id="name" placeholder="Name" class="name">
-            
                     <label for="email"><span class="srOnly">Your email</span></label>
                     <input type="email" id="email" placeholder="Email address" class="email">
-            
                     <label for="comment"><span class="srOnly">Message to Sophie</span></label>
                     <textarea name="" id="comment" placeholder="Comment" class="message"></textarea>
-            
                     <button>Submit</button>
                 </form>
             </section>
-
         </div>
     </main>
-
+    
+    <!-- Footer and link to Juno College website -->
     <footer>
         <span>Copyright &copy 2020 Juno College |</span>
         <span>Created at <a href="https://junocollege.com">Juno College</a></span>
     </footer>
-
-
-
 </body>
 </html>

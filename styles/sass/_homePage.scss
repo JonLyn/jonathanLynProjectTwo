@@ -80,9 +80,9 @@
 
 }
 
-// MAIN SECTIONS
-// WHO IS SOPHIE SECTION
+// MAIN SECTION
 
+// Articles about Sophie and accompanying images
 .whoIs {
     background-color: $whiteShade;
     padding: 75px 0;
@@ -109,7 +109,6 @@
 .travelled p,
 .journey p {
     @include robotoFont (2rem, $black, 400, 32px, 0px);
-    // width: 90%;
     margin: 20px 0 40px 0;
 }
 
@@ -138,15 +137,11 @@
     color: $whiteShade;
 }
 
-// SOPHIE'S FAVOURITE THINGS SECTION
-
 .favouriteThings,
 .travelled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border: 3px solid yellow;
-    
 }
 
 .brownDogFlexbox,
@@ -154,7 +149,6 @@
 .beachChairsFlexbox,
 .travelled article {
     flex-basis: 45%;
-    // border: 3px solid purple;
     position: relative;
 }
 
@@ -162,7 +156,6 @@
     box-shadow: 15px 15px $rustRed, -113px 15px $rustRed;
     position: absolute;
     top: -215px;
-
 }
 
 .beachChairs {
@@ -171,7 +164,7 @@
     top: -125px;
 }
 
-
+// Icons and mid-page navigation links
 .iconSection {
     background: $whiteShade;
     padding: 100px 0 50px 0;
@@ -188,7 +181,6 @@
     flex-basis: 45%;  
     margin-bottom: 50px;
     margin-right: 40px;
-
 }
 
 .iconSection i {
@@ -222,7 +214,7 @@
     padding-top: 15px;
 }
 
-
+// Additional article and image on Sophie's journey
 .journey {
     background-color: $whiteShade;
 }
@@ -235,7 +227,6 @@
 
 .edgeOfBuilding {
     flex-basis: 25%;
-
 }
 
 .edgeOfBuilding img {
@@ -246,7 +237,7 @@
     flex-basis: 65%;
 }
 
-
+// Photo gallery
 .gallery {
     display: flex;
     justify-content: space-between;

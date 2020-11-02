@@ -1066,16 +1066,6 @@ textarea:focus {
   border-bottom: 3px solid #A82706;
 }
 
-@media (max-width: 961px) {
-  .wrapper .formSection {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: 5 / 1 / 6 / 4;
-  }
-}
-
 footer {
   font-family: 'Lora', serif;
   background-color: black;
@@ -1151,6 +1141,9 @@ footer a:focus {
     -webkit-box-shadow: -630px 15px #F6A823, -350px 15px #F6A823, 15px 15px #F6A823;
             box-shadow: -630px 15px #F6A823, -350px 15px #F6A823, 15px 15px #F6A823;
   }
+}
+
+@media (max-width: 961px) {
   .iconSection ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1162,9 +1155,6 @@ footer a:focus {
   .iconSection li {
     min-width: 300px;
   }
-}
-
-@media (max-width: 961px) {
   .iconSection li {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
