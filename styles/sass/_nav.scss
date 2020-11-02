@@ -20,6 +20,12 @@
     @include robotoFont(2rem, $black, 700, 29px, 1px);
 }
 
+.horizNav a:hover,
+.horizNav a:focus {
+    color: $whiteShade;
+    border-bottom: 3px solid $rustRed;
+}
+
 .horizNav span {
     font-family: 'Lora', serif;
     font-size: 4rem;
@@ -130,8 +136,13 @@
     /* Style hamburger menu links */
     .hamburgerMenu a {
         @include robotoFont(2rem, $black, 700);
-        // margin-top: 20px;
         text-transform: uppercase;
+    }
+
+    .hamburgerMenu a:hover,
+    .hamburgerMenu a:focus {
+        color: $whiteShade;
+        border-bottom: 3px solid $rustRed;
     }
 
     .hamburgerMenu li {

@@ -118,6 +118,17 @@
     text-transform: uppercase;
 }
 
+.whoIs a:hover,
+.favouriteThings a:hover,
+.travelled a:hover,
+.journey a:hover,
+.whoIs a:focus,
+.favouriteThings a:focus,
+.travelled a:focus,
+.journey a:focus {
+    color: $whiteShade;
+}
+
 // SOPHIE'S FAVOURITE THINGS SECTION
 
 .favouriteThings,
@@ -184,6 +195,17 @@
     @include robotoFont (3.2rem, $black, 700, 1, 1px);
     text-transform: uppercase;
     position: relative;
+}
+
+.iconSection a:hover,
+.iconSection a:focus {
+    color: $orangeyYellow;
+    border-bottom: 3px solid $rustRed;
+}
+
+.iconSection a:hover i,
+.iconSection a:focus {
+    color: $black;
 }
 
 .iconSection p {

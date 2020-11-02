@@ -12,14 +12,14 @@
     position: relative;
 }
 
-.blogHero p {
+.blogHero h1 {
     font-family: 'Lora', serif;
     font-size: 8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $black;
     position: absolute;
-    bottom: -40px;
+    bottom: -93px;
 }
 
 .blogMain {
@@ -79,9 +79,19 @@
     color: $orangeyYellow;
 }
 
+.recentPosts span {
+    // position: relative;
+    // left: 15px;
+    margin-left: 15px;
+}
+
 .recentPosts a {
     color: $black;
-    padding-left: 15px;
+}
+
+.recentPosts span:hover,
+.recentPosts a:focus {
+    border-bottom: 3px solid $rustRed;
 }
 
 .whyBlog {
@@ -168,6 +178,7 @@
 
     .aboutSophie div:first-child {
         margin-right: 20px;
+        min-width: 200px;
     }
 
 }

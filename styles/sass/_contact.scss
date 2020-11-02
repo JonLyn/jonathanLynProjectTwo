@@ -56,6 +56,14 @@
 
 .socialMediaIcons i {
     color: $orangeyYellow;
+    border-bottom: 3px solid transparent;
+}
+
+.socialMediaIcons i:hover,
+.socialMediaIcons i:focus {
+    color: $rustRed;
+    border-bottom: 3px solid $rustRed;
+
 }
 
 .socialMediaIcons li {
@@ -77,6 +85,11 @@
 .address a {
     text-transform: none;
     color: $black;
+}
+
+.address a:hover,
+.address a:focus {
+    border-bottom: 3px solid $rustRed;
 }
 
 

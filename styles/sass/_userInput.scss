@@ -21,6 +21,7 @@ input,
 textarea {
     padding: 15px;
     font-style: italic;
+    border-bottom: 3px solid transparent;
 }
 
 .name,
@@ -46,6 +47,18 @@ button {
     text-transform: uppercase;
     background-color: $accent;
     width: 100%;
+}
+
+button:hover,
+button:focus {
+    color: $whiteShade;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    border-bottom: 3px solid $rustRed;
 }
 
 @media (max-width: 961px) {

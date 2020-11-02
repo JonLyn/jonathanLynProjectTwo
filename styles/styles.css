@@ -277,6 +277,12 @@ body {
   letter-spacing: 1px;
 }
 
+.horizNav a:hover,
+.horizNav a:focus {
+  color: #F0EFED;
+  border-bottom: 3px solid #A82706;
+}
+
 .horizNav span {
   font-family: 'Lora', serif;
   font-size: 4rem;
@@ -390,6 +396,11 @@ body {
     line-height: 32px;
     letter-spacing: 0;
     text-transform: uppercase;
+  }
+  .hamburgerMenu a:hover,
+  .hamburgerMenu a:focus {
+    color: #F0EFED;
+    border-bottom: 3px solid #A82706;
   }
   .hamburgerMenu li {
     margin-top: 15px;
@@ -543,6 +554,17 @@ body {
   text-transform: uppercase;
 }
 
+.whoIs a:hover,
+.favouriteThings a:hover,
+.travelled a:hover,
+.journey a:hover,
+.whoIs a:focus,
+.favouriteThings a:focus,
+.travelled a:focus,
+.journey a:focus {
+  color: #F0EFED;
+}
+
 .favouriteThings,
 .travelled {
   display: -webkit-box;
@@ -621,6 +643,17 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
+}
+
+.iconSection a:hover,
+.iconSection a:focus {
+  color: #F6A823;
+  border-bottom: 3px solid #A82706;
+}
+
+.iconSection a:hover i,
+.iconSection a:focus {
+  color: #2C2C2C;
 }
 
 .iconSection p {
@@ -875,6 +908,13 @@ body {
 
 .socialMediaIcons i {
   color: #F6A823;
+  border-bottom: 3px solid transparent;
+}
+
+.socialMediaIcons i:hover,
+.socialMediaIcons i:focus {
+  color: #A82706;
+  border-bottom: 3px solid #A82706;
 }
 
 .socialMediaIcons li {
@@ -906,6 +946,11 @@ body {
 .address a {
   text-transform: none;
   color: #2C2C2C;
+}
+
+.address a:hover,
+.address a:focus {
+  border-bottom: 3px solid #A82706;
 }
 
 @media (max-width: 768px) {
@@ -953,14 +998,14 @@ body {
   position: relative;
 }
 
-.blogHero p {
+.blogHero h1 {
   font-family: 'Lora', serif;
   font-size: 8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #2C2C2C;
   position: absolute;
-  bottom: -40px;
+  bottom: -93px;
 }
 
 .blogMain {
@@ -1042,9 +1087,17 @@ body {
   color: #F6A823;
 }
 
+.recentPosts span {
+  margin-left: 15px;
+}
+
 .recentPosts a {
   color: #2C2C2C;
-  padding-left: 15px;
+}
+
+.recentPosts span:hover,
+.recentPosts a:focus {
+  border-bottom: 3px solid #A82706;
 }
 
 .whyBlog {
@@ -1167,6 +1220,7 @@ body {
   }
   .aboutSophie div:first-child {
     margin-right: 20px;
+    min-width: 200px;
   }
 }
 
@@ -1202,6 +1256,7 @@ input,
 textarea {
   padding: 15px;
   font-style: italic;
+  border-bottom: 3px solid transparent;
 }
 
 .name,
@@ -1234,6 +1289,18 @@ button {
   width: 100%;
 }
 
+button:hover,
+button:focus {
+  color: #F0EFED;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border-bottom: 3px solid #A82706;
+}
+
 @media (max-width: 961px) {
   .wrapper .formSection {
     -ms-grid-row: 5;
@@ -1259,6 +1326,11 @@ footer {
 
 footer a {
   color: #05AFC1;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #F0EFED;
 }
 
 * {
