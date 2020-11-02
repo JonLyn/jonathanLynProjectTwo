@@ -1,4 +1,4 @@
-// Colour palette
+// Colour palette and variables
 $black: #2C2C2C;
 $darkGreyBlue: #285E64;
 $orangeyYellow: #F6A823;
@@ -7,4 +7,48 @@ $accent: #05AFC1;
 $rustRed: #A82706;
 $whiteShade: #F0EFED;
 
+
+// Reset styles 
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+// Remove list styles 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Set default image widths
+img {
+    width: 100%;
+    display: block;
+}
+
+// 
+html {
+    overflow-x:hidden;
+}
+
+// Set max width, fonts and and default font size 
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.6rem;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+// Set wrapper dimensions 
+.wrapper {
+    width: 1140px;
+    max-width: 90%;
+    margin: 0 auto;
+}
 

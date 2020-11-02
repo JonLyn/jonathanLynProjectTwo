@@ -1,3 +1,22 @@
+// See _nav.scss for menu styles
+
+//  HEADER SECTION
+
+// Move "Skip to main" link for accessibility
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
+
 .contactHero {
     background-image: url("../assets/contact-image-1.jpg");
     background-repeat: no-repeat;
@@ -92,35 +111,4 @@
     border-bottom: 3px solid $rustRed;
 }
 
-
-// @media (max-width: 768px) {
-//     .contactHero h1 {
-//         font-size: 6rem;
-//         bottom: -70px;
-//     }
-
-//     .contactMain .wrapper {
-//         flex-direction: column;
-//         justify-content: space-evenly;
-//     }
-
-//     .contactInfo {
-//         width: 100%; 
-//     }
-
-//     .iconsAddress {
-//         margin: 0 0 40px 0;
-//     }
-
-//     .contactMain {
-//         padding-bottom: 150px;
-//         height: 800px;
-//     }
-// }
-
-// @media (max-width: 480px) {
-//     .contactHero h1 {
-//         bottom: -108px;
-//     }
-// }
 

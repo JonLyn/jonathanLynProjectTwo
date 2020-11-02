@@ -1,3 +1,72 @@
+@media (max-width: 1160px) {
+    .overflow {
+        height: calc(95%);
+    }
+
+    .overflow::after {
+        content: '';
+        background: linear-gradient(to right, $orangeyYellow, rgba(246, 168, 35, 0));
+        width: 509px;
+        height: 712px;
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .favouriteThings,
+    .travelled {
+        flex-wrap: wrap;
+    } 
+
+    .brownDogFlexbox,
+    .beachChairsFlexbox {
+        min-width: 400px;
+        height: 185px;
+        flex-basis: 100%;
+    }
+
+    .brownDog {
+        top: -80px;
+        left: 0;
+        box-shadow: 700px 15px $rustRed, 300px 15px $rustRed, 15px 15px $rustRed;
+        max-width: 400px;
+        
+    }
+
+    .favouriteThings article,
+    .travelled article {
+        flex-basis: 100%;
+    }
+
+    .favouriteThings article {
+        padding: 40px 0;
+        margin-bottom: 75px;
+    }
+
+    .beachChairsFlexbox {
+        order: -1;
+    }
+
+    .beachChairs {
+        max-width: 400px;
+        right: 0;
+        box-shadow: -630px 15px $orangeyYellow,
+        -350px 15px $orangeyYellow,
+        15px 15px $orangeyYellow;
+    }
+
+    .iconSection ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        // text-align: center;
+        margin: 0 auto;
+    }
+
+    .iconSection li {
+        min-width: 300px;
+    }
+}  
+
 // ========= FIRST BREAKPOINT - 961px ========
 
 @media (max-width: 961px) {

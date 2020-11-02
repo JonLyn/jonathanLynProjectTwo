@@ -1,6 +1,22 @@
 // See _nav.scss for menu styles
 
 //  HEADER SECTION
+
+// Move "Skip to main" link for accessibility
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
+// h1 and header image
 .homepageHeader {
     background-color: $orangeyYellow;
     height: 100vh;
@@ -10,7 +26,6 @@
 }
 
 .hero {
-    // border: 5px dashed yellow;
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -19,7 +34,6 @@
 .title {
     display: flex;
     justify-content: flex-start;
-    // border: 3px solid green;
     position: relative;
     left: 57px;
     z-index: 10;
@@ -48,30 +62,25 @@
     justify-content: flex-end;
     flex-basis: 50%;
     position: relative;
-    // border: 3px solid blue;
     min-width: 565px;
 }
 
 .orangesPic img {
-    // position: absolute;
     top: 0;
     min-width: 465px;
     min-height: 655px;
 }
 
 .overflow {
-    // border: 3px dashed pink;
     position: absolute;
     width: 90%;
     height: 110%;
     overflow: hidden;
     box-shadow: 15px 15px white;
-    // min-width: 497px;
-    // max-height: 655px;
+
 }
 
 // MAIN SECTIONS
-
 // WHO IS SOPHIE SECTION
 
 .whoIs {
@@ -247,156 +256,5 @@
 .gallery div {
     flex-basis: 32%;
 }
-
-@media (max-width: 1160px) {
-    
-    // .hero {
-    //     background-image: url("../assets/home-image-1.jpg");
-    //     background-repeat: no-repeat;
-    //     background-position: right;
-    // }
-
-
-    // .overflow {
-    //     min-width: 513px;
-.overflow {
-    // opacity: 0.5;
-    height: calc(95%);
-    // background: linear-gradient(to right, $orangeyYellow, rgba(246, 168, 35, 0));
-}
-
-.overflow::after {
-    content: '';
-    background: linear-gradient(to right, $orangeyYellow, rgba(246, 168, 35, 0));
-    width: 509px;
-    height: 712px;
-    position: absolute;
-    top: 0;
-    right: 0
-
-}
-
-
-.favouriteThings,
-.travelled {
-    flex-wrap: wrap;
-} 
-
-.brownDogFlexbox,
-.beachChairsFlexbox {
-    min-width: 400px;
-    height: 185px;
-    flex-basis: 100%;
-}
-
-.brownDog {
-    top: -80px;
-    left: 0;
-    box-shadow: 700px 15px $rustRed, 300px 15px $rustRed, 15px 15px $rustRed;
-    max-width: 400px;
-    
-}
-
-.favouriteThings article,
-.travelled article {
-    flex-basis: 100%;
-}
-
-.favouriteThings article {
-    padding: 40px 0;
-    margin-bottom: 75px;
-}
-
-
-
-.beachChairsFlexbox {
-    order: -1;
-}
-
-.beachChairs {
-    max-width: 400px;
-    right: 0;
-    box-shadow: -630px 15px $orangeyYellow,
-    -350px 15px $orangeyYellow,
-    15px 15px $orangeyYellow;
-}
-
-.iconSection ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    // text-align: center;
-    margin: 0 auto;
-}
-
-.iconSection li {
-    min-width: 300px;
-}
-
-}  
-
-
-// @media (max-width: 961px) {
-//     .iconSection li {
-//         flex-basis: 80%;
-//     }
-// }
-
-
-// @media (max-width: 768px) {
-//     .journey .wrapper {
-//         flex-direction: column;
-//         padding: 75px 0 50px 0;
-//     }
-
-//     .edgeOfBuilding {
-//         width: 170px;
-//         box-shadow: 150px 15px $orangeyYellow,
-//         315px 15px $orangeyYellow,
-//         450px 15px $orangeyYellow, 600px 15px $orangeyYellow;
-//     }
-
-//     .journey article {
-//         padding-top: 50px;
-//     }
-// }
-
-// @media (max-width: 580px) {
-//     .title h1 {
-//         font-size: 10rem;
-//     }
-// }
-
-
-
-// @media (max-width: 480px) {
-//     .title h1 {
-//         font-size: 8rem;
-//     }
-
-//     .overflow {
-//         right: 100px;
-//         opacity: 0.5;
-//     }
-
-//     .overflow::after {
-//         display: none;
-//     }
-    
-//     .gallery {
-//         flex-direction: column;
-//         padding: 50px 0;
-//     }
-
-//     .gallery div {
-//         margin: 10px 0;
-//     }
-// }
-
-
-
-
-
-
-
 
 
