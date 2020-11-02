@@ -736,7 +736,7 @@ body {
 }
 
 .socialMediaIcons i:hover,
-.socialMediaIcons i:focus {
+.socialMediaIcons a:focus i {
   color: #A82706;
   border-bottom: 3px solid #A82706;
 }

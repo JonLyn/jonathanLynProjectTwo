@@ -82,7 +82,7 @@
 }
 
 .socialMediaIcons i:hover,
-.socialMediaIcons i:focus {
+.socialMediaIcons a:focus i {
     color: $rustRed;
     border-bottom: 3px solid $rustRed;
 }
