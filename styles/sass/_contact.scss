@@ -93,83 +93,34 @@
 }
 
 
-@media (max-width: 768px) {
-    .contactHero h1 {
-        font-size: 6rem;
-        bottom: -70px;
-    }
+// @media (max-width: 768px) {
+//     .contactHero h1 {
+//         font-size: 6rem;
+//         bottom: -70px;
+//     }
 
-    .contactMain .wrapper {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+//     .contactMain .wrapper {
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//     }
 
-    .contactInfo {
-        width: 100%; 
-    }
+//     .contactInfo {
+//         width: 100%; 
+//     }
 
-    .iconsAddress {
-        margin: 0 0 40px 0;
-    }
+//     .iconsAddress {
+//         margin: 0 0 40px 0;
+//     }
 
-    .contactMain {
-        padding-bottom: 150px;
-        height: 800px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contactHero h1 {
-        bottom: -108px;
-    }
-}
-
-// .formSection {
-//     width: 60%;
+//     .contactMain {
+//         padding-bottom: 150px;
+//         height: 800px;
+//     }
 // }
 
-// form {
-//     max-width: 100%;
-//     flex-basis: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     height: 100%;
+// @media (max-width: 480px) {
+//     .contactHero h1 {
+//         bottom: -108px;
+//     }
 // }
-
-// input,
-// textarea {
-//     padding: 15px;
-//     font-style: italic;
-// }
-
-// .name,
-// .email {
-//     display: block;
-//     width: calc(50% - 5px);
-//     margin-bottom: 15px;
-// }
-
-// .name {
-//     margin-right: 10px;
-// }
-
-// .message {
-//     width: 100%;
-//     height: calc(100%);
-//     display: block;
-//     margin-bottom: 15px;
-// }
-
-// button {
-//     @include robotoFont (2rem, $black, 700, 32px, 0);
-//     text-transform: uppercase;
-//     background-color: $accent;
-//     width: 100%;
-// }
-
-
-
-
-
 

@@ -335,62 +335,62 @@
 }  
 
 
-@media (max-width: 961px) {
-    .iconSection li {
-        flex-basis: 80%;
-    }
-}
+// @media (max-width: 961px) {
+//     .iconSection li {
+//         flex-basis: 80%;
+//     }
+// }
 
 
-@media (max-width: 768px) {
-    .journey .wrapper {
-        flex-direction: column;
-        padding: 75px 0 50px 0;
-    }
+// @media (max-width: 768px) {
+//     .journey .wrapper {
+//         flex-direction: column;
+//         padding: 75px 0 50px 0;
+//     }
 
-    .edgeOfBuilding {
-        width: 170px;
-        box-shadow: 150px 15px $orangeyYellow,
-        315px 15px $orangeyYellow,
-        450px 15px $orangeyYellow, 600px 15px $orangeyYellow;
-    }
+//     .edgeOfBuilding {
+//         width: 170px;
+//         box-shadow: 150px 15px $orangeyYellow,
+//         315px 15px $orangeyYellow,
+//         450px 15px $orangeyYellow, 600px 15px $orangeyYellow;
+//     }
 
-    .journey article {
-        padding-top: 50px;
-    }
-}
+//     .journey article {
+//         padding-top: 50px;
+//     }
+// }
 
-@media (max-width: 580px) {
-    .title h1 {
-        font-size: 10rem;
-    }
-}
+// @media (max-width: 580px) {
+//     .title h1 {
+//         font-size: 10rem;
+//     }
+// }
 
 
 
-@media (max-width: 480px) {
-    .title h1 {
-        font-size: 8rem;
-    }
+// @media (max-width: 480px) {
+//     .title h1 {
+//         font-size: 8rem;
+//     }
 
-    .overflow {
-        right: 100px;
-        opacity: 0.5;
-    }
+//     .overflow {
+//         right: 100px;
+//         opacity: 0.5;
+//     }
 
-    .overflow::after {
-        display: none;
-    }
+//     .overflow::after {
+//         display: none;
+//     }
     
-    .gallery {
-        flex-direction: column;
-        padding: 50px 0;
-    }
+//     .gallery {
+//         flex-direction: column;
+//         padding: 50px 0;
+//     }
 
-    .gallery div {
-        margin: 10px 0;
-    }
-}
+//     .gallery div {
+//         margin: 10px 0;
+//     }
+// }
 
 
 

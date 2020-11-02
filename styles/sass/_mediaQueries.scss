@@ -1,0 +1,243 @@
+// ========= FIRST BREAKPOINT - 961px ========
+
+@media (max-width: 961px) {
+    .iconSection li {
+        flex-basis: 80%;
+    }
+
+    .wrapper .formSection {
+        grid-area: 5 / 1 / 6 / 4;
+    }
+
+    .firstColumn {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .whyBlog {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+
+    .recentCommsOne {
+        grid-area: 3 / 1 / 4 / 4;
+    }
+
+    .recentCommsTwo {
+        grid-area: 4 / 1 / 5 / 4;
+    }
+
+    .aboutSophie {
+        display: flex;
+    }
+
+    .aboutSophie div:first-child {
+        margin-right: 20px;
+        min-width: 200px;
+    }
+}
+
+// ========= SECOND BREAKPOINT - 768px ========
+
+
+@media (max-width: 768px) {
+    .journey .wrapper {
+        flex-direction: column;
+        padding: 75px 0 50px 0;
+    }
+
+    .edgeOfBuilding {
+        width: 170px;
+        box-shadow: 150px 15px $orangeyYellow,
+        315px 15px $orangeyYellow,
+        450px 15px $orangeyYellow, 600px 15px $orangeyYellow;
+    }
+
+    .journey article {
+        padding-top: 50px;
+    }
+
+    .contactHero h1 {
+        bottom: -93px;
+    }
+
+    .contactMain .wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contactInfo {
+        width: 100%; 
+    }
+
+    .iconsAddress {
+        margin: 0 0 40px 0;
+    }
+
+    .contactMain {
+        padding-bottom: 150px;
+        height: 800px;
+    }
+
+    .horizNav li {
+        margin: 0 20px;
+    }
+}
+
+// ========= THIRD BREAKPOINT - 650px ========
+
+@media (max-width:650px) {
+    .horizNav {
+        display: none;
+    }
+
+    /* Display hamburger menu */
+    .hamburgerMenu {
+        display: block;
+        padding: 30px 0 31px 0;
+        background-color: $orangeyYellow;
+        z-index: 20;
+    }
+
+    /* Set toggle for hamburger menu */
+    .menuToggle {
+        display: block;
+        position: relative;
+        left: 75%;
+        top: 0;
+    }
+
+    .menuToggle input {
+        display: block;
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .menuToggle ul {
+        background-color: $orangeyYellow;
+        border-bottom: 7px solid $whiteShade;
+        width: 160px;
+        padding-bottom: 10px;
+    }
+
+    /* Style spans to make hamburger menu icon*/
+    .topBun,
+    .meat,
+    .bottomBun {
+        display: block;
+        width: 60px;
+        height: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: $whiteShade;
+    }
+
+    /* Animate top and bottom lines of hamburger menu to expand when selected */
+    .topBun {
+        transition: transform 0.5s ease;
+    }
+
+    .bottomBun {
+        transition: transform 0.5s ease;
+    }
+
+    .menuToggle input:checked ~ .topBun {
+        transform: translate(0, -4px);
+    }
+
+    .menuToggle input:checked ~ .bottomBun {
+        transform: translate(0, 4px);
+    }
+
+    /* Make menu links slide in from the right and have transparency fade in/out */
+    .hamburgerMenu ul {
+        position: absolute;
+        opacity: 0;
+        transition: transform 0.8s ease,
+        opacity 0.8s ease;
+        transform: translateX(100%);
+        transform-origin: top left;
+    }
+
+    .menuToggle input:checked ~ ul {
+    transform: none;
+    opacity: 1;
+    }
+
+    .menuToggle input ~ ul {
+        opacity: 0;
+    }
+
+    /* Style hamburger menu links */
+    .hamburgerMenu a {
+        @include robotoFont(2rem, $black, 700);
+        text-transform: uppercase;
+    }
+
+    .hamburgerMenu a:hover,
+    .hamburgerMenu a:focus {
+        color: $whiteShade;
+        border-bottom: 3px solid $rustRed;
+    }
+
+    .hamburgerMenu li {
+        margin-top: 15px;
+    }
+
+    .hamburgerMenu .home,
+    .hamburgerMenu .about,
+    .hamburgerMenu .blog,
+    .hamburgerMenu .contact {
+        padding-left: 5px;
+    }
+
+    .contactHero h1 {
+        width: 300px;
+        bottom: -145px;
+    }
+
+}
+
+// ========= FOURTH BREAKPOINT - 580px ========
+
+@media (max-width: 580px) {
+    .title h1 {
+        font-size: 10rem;
+    }
+}
+
+// ========= FIFTH BREAKPOINT - 480px ========
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 8rem;
+    }
+
+    .overflow {
+        right: 100px;
+        opacity: 0.5;
+    }
+
+    .overflow::after {
+        display: none;
+    }
+    
+    .gallery {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .gallery div {
+        margin: 10px 0;
+    }
+
+    .contactHero h1 {
+        bottom: -145px;
+    }
+}
+
+
